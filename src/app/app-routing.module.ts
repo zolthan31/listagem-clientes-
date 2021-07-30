@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ClientesFormComponent } from './clientes/clientes-form/clientes-form.component';
+//import { ClientesFormComponent } from './clientes/clientes-form/clientes-form.component';
 
 const routes: Routes = [
   {
@@ -11,6 +11,11 @@ const routes: Routes = [
   {
     path : 'clientes-form',
     loadChildren: './clientes/clientes.module#ClientesModule'
+  },
+
+  {
+    path : 'clientes-lista',
+    loadChildren: './clientes/clientes.module#ClientesList'
   }
 
 ];
