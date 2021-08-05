@@ -15,7 +15,7 @@ const routes: Routes = [
 
   {
     path : 'clientes-lista',
-    loadChildren: './clientes/clientes.module#ClientesList'
+    loadChildren: './clientes/clientes.module#ClientesLista'
   }
 
 ];
