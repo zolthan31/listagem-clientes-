@@ -9,11 +9,14 @@ import { ClientesService } from '../../clientes.service';
 })
 export class ClientesListaComponent implements OnInit {
 
-  clintes: Cliente[] = [];
+  clientes: Cliente[] = [];
 
-  constructor(private service: ClientesService) { }
+  constructor(private service: ClientesService) { 
+    
+  }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.clientes = this.service.getClientes();
   }
 
 }
