@@ -1,3 +1,6 @@
+import { ClientesModule } from './clientes/clientes.module';
+import { ClientesListaComponent } from './clientes/clientes-lista/clientes-lista.component';
+import { ClientesFormComponent } from './clientes/clientes-form/clientes-form.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -13,13 +16,15 @@ import { ClientesService } from "./clientes.service";
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    TemplateModule
+    TemplateModule,
+    ClientesModule
   ],
   providers: [
     ClientesService
